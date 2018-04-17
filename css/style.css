@@ -62,6 +62,9 @@ nav ul {
   justify-content: flex-end;
   margin: 0;
   list-style: none; }
+  @media screen and (max-width: 500px) {
+    nav ul {
+      display: none; } }
   nav ul li {
     padding: 0 20px 0 10px; }
   nav ul a {
@@ -119,11 +122,13 @@ nav ul {
   font-size: 2em;
   font-weight: lighter;
   color: darkslategray;
+  padding: 0;
+  margin: 0;
   padding-left: 40px; }
   @media screen and (min-width: 700px) {
     .section_title {
       position: relative;
-      top: -120px; } }
+      top: -100px; } }
 
 .interior_content {
   padding-left: 80px; }
@@ -152,10 +157,13 @@ nav ul {
   overflow-y: scroll;
   overflow-x: hidden; }
   #browser ul {
-    padding: 2px 2px 6px 12px; }
+    padding: 0;
+    margin: 0; }
 
 .tiny {
-  font-size: .8em; }
+  font-size: .8em;
+  font-weight: lighter;
+  padding-left: 10px; }
 
 #section3 {
   background-color: #DAD3CF; }
@@ -164,7 +172,14 @@ nav ul {
   background-color: #BCBBB8; }
 
 #section5 {
-  background-color: #3D403C; }
+  position: relative;
+  width: 100vw;
+  background-color: #3D403C;
+  min-height: 100vh;
+  border-top: 1px solid white; }
+  @media screen and (max-width: 700px) {
+    #section5 {
+      overflow-x: hidden; } }
   #section5 h1, #section5 p {
     color: white; }
 
