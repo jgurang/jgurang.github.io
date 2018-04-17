@@ -1,4 +1,5 @@
 $break-small: 320px;
+$break-medium: 700px;
 $break-large: 1200px;
 
 body{
@@ -61,19 +62,18 @@ nav ul {
     top:0;
     right:0;
     width: 100vw;
-
     height: 60px;
-
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-end;
+    @media screen and (max-width: 500px){
+    display: none;
+    }
     margin: 0;
     list-style: none;
-
     li{
         padding: 0 20px 0 10px;
-
     }
     a {
         text-decoration: none;
@@ -83,6 +83,7 @@ nav ul {
         }
     }
 }
+
 .content{
     position: relative;
     width: 100vw;
@@ -137,15 +138,15 @@ nav ul {
 
 .section_title{
     font-family: 'Josefin Slab', serif;
-    //font-variant: small-caps;
     font-size: 2em;
     font-weight: lighter;
     color: darkslategray;
-    //text-align: center;
+    padding: 0;
+    margin: 0;
 
     @media screen and (min-width: 700px) {
         position: relative;
-        top: -120px;
+        top: -100px;
     }
     padding-left: 40px;
 
@@ -162,7 +163,6 @@ nav ul {
 
 #mac{
     display:block;
-
     width:520px;
     height:496px;
     background-image: url("../img/Mac_Classic.png");
@@ -182,13 +182,16 @@ nav ul {
     overflow-y:scroll;
     overflow-x:hidden;
     ul{
-        padding: 2px 2px 6px 12px;
+        padding: 0;
+        margin: 0;
     }
 }
 
 
 .tiny{
     font-size: .8em;
+    font-weight: lighter;
+    padding-left: 10px;
 }
 
 #section3{
