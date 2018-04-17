@@ -1,0 +1,210 @@
+$break-small: 320px;
+$break-large: 1200px;
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -5;
+  background: transparent url("../img/reader_poster.jpg");
+  background-size: cover;
+  background-position: 0 0; }
+
+.pausebutton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding: 10px; }
+
+#myBtn {
+  /*width: 200px;*/
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+    &:hover{
+        color: gray;
+    }
+}
+#nav_bg{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    border-bottom: 1px solid white;
+    z-index:0;
+
+}
+nav {
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100vw;
+    height: 60px;
+    z-index:10;
+}
+nav ul {
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100vw;
+
+    height: 60px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    list-style: none;
+
+    li{
+        padding: 0 20px 0 10px;
+
+    }
+    a {
+        text-decoration: none;
+        color: greenyellow;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.content{
+    position: relative;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding-top: 75vh;
+
+}
+
+.sticky{
+    position: sticky;
+    width: 100vw;
+    position: -webkit-sticky;
+    top: 60px;
+    min-height: 100vh;
+    border-top: 1px solid white;
+    @media screen and (max-width: 700px){
+    overflow-x:hidden;}
+
+}
+
+.round_image{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    @media screen and (max-width: 700px){
+    display:none;}
+
+}
+#section1{
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+#page_title{
+    font-family: 'Josefin Slab', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    position: relative;
+    @media screen and (min-width: 700px){
+    top: -5em;}
+
+}
+
+.section_title{
+    font-family: 'Josefin Slab', serif;
+    //font-variant: small-caps;
+    font-size: 2em;
+    font-weight: lighter;
+    color: darkslategray;
+    //text-align: center;
+
+    @media screen and (min-width: 700px) {
+        position: relative;
+        top: -120px;
+    }
+    padding-left: 40px;
+
+}
+
+.interior_content{
+    padding-left: 80px;
+
+}
+
+#section2{
+    background-color: #B2B3B8;
+}
+
+#mac{
+    display:block;
+
+    width:520px;
+    height:496px;
+    background-image: url("../img/Mac_Classic.png");
+    background-size: contain;
+    @media screen and (min-width: 700px){
+    margin-left: 15%;}
+
+}
+#browser{
+    position: relative;
+    top: 84px;
+    left: 163px;
+    width: 165px;
+    height: 90px;
+    background-color: yellow;
+    display: block;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    ul{
+        padding: 2px 2px 6px 12px;
+    }
+}
+
+
+.tiny{
+    font-size: .8em;
+}
+
+#section3{
+    background-color: #DAD3CF;
+
+}
+
+#section4{
+    background-color: #BCBBB8;
+
+}
+
+#section5{
+    background-color: #3D403C;
+
+    h1, p {
+        color: white;
+    }
+}
