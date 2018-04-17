@@ -202,9 +202,16 @@ nav ul {
 }
 
 #section5{
+    position: relative;
+    //top: 60px;
+    width: 100vw;
     background-color: #3D403C;
-
+    min-height: 100vh;
+    border-top: 1px solid white;
+    @media screen and (max-width: 700px){
+    overflow-x:hidden;}
     h1, p {
         color: white;
     }
 }
+
