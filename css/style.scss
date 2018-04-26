@@ -84,6 +84,17 @@ nav ul {
     }
 }
 
+#hamburger {
+    @media screen and (min-width: 500px){
+    display: none;
+    }
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+}
+
 .content{
     position: relative;
     width: 100vw;
@@ -137,6 +148,7 @@ nav ul {
 }
 
 .section_title{
+    position:relative;
     font-family: 'Josefin Slab', serif;
     font-size: 2em;
     font-weight: lighter;
@@ -169,7 +181,6 @@ nav ul {
     background-size: contain;
     @media screen and (min-width: 700px){
     margin-left: 15%;}
-
 }
 #browser{
     position: relative;
@@ -181,10 +192,6 @@ nav ul {
     display: block;
     overflow-y:scroll;
     overflow-x:hidden;
-    ul{
-        padding: 0;
-        margin: 0;
-    }
 }
 
 
@@ -218,3 +225,22 @@ nav ul {
     }
 }
 
+.project{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    border: #555555 solid 1px;
+    border-radius: 5px;
+    background-color: white;
+}
+.imageLink:hover{
+    -moz-box-shadow:     0 0 10px #000000;
+   -webkit-box-shadow:  0 0 10px #000000;
+   box-shadow:          0 0 10px #000000;
+}
