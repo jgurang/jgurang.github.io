@@ -73,6 +73,16 @@ nav ul {
     nav ul a:hover {
       text-decoration: underline; }
 
+#hamburger {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: white; }
+  @media screen and (min-width: 500px) {
+    #hamburger {
+      display: none; } }
+
 .content {
   position: relative;
   width: 100vw;
@@ -180,5 +190,24 @@ nav ul {
       overflow-x: hidden; } }
   #section5 h1, #section5 p {
     color: white; }
+
+.project {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  border: #555555 solid 1px;
+  border-radius: 5px;
+  background-color: white; }
+
+.imageLink:hover {
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000; }
 
 /*# sourceMappingURL=style.css.map */

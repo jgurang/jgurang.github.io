@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whacamole</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+
+<div id="borderBox">
+<div id="loseSlider"><div id="loseText">Too many avocados wasted.</div>
+    <div id="loseText2">Avocados are a precious natural resource! Please use only what you can eat.</div>
+    <button id="playAgain">PLAY AGAIN?</button>
+</div>
+    <div id="topContent">
+        <img src="img/logo.png" alt="Whacamole">
+        <div id="chipsContainer">
+            <img src="img/chips.png" alt="bowl of chips" class="chips"/>
+            <div id="chipOutline"><span id="dragMeText">DRAG ME!</span></div><img src="img/chip.png" id="chip"/>
+        </div>
+    </div>
+    <div id="container">
+    <div class="row">
+        <div id="a" class="bowl"></div>
+        <div id="b" class="bowl"></div>
+        <div id="c" class="bowl"></div>
+        <div id="d" class="bowl"></div>
+        <div id="e" class="bowl"></div>
+    </div>
+    <div class="row">
+        <div id="f" class="bowl"></div>
+        <div id="g" class="bowl"></div>
+        <div id="h" class="bowl"></div>
+        <div id="i" class="bowl"></div>
+        <div id="j" class="bowl"></div>
+
+    </div>
+    <div class="row">
+        <div id="k" class="bowl"></div>
+        <div id="l" class="bowl"></div>
+        <div id="m" class="bowl"></div>
+        <div id="n" class="bowl"></div>
+        <div id="o" class="bowl"></div>
+    </div>
+    <div class="row">
+        <div id="p" class="bowl"></div>
+        <div id="q" class="bowl"></div>
+        <div id="r" class="bowl"></div>
+        <div id="s" class="bowl"></div>
+        <div id="t" class="bowl"></div>
+    </div>
+</div>
+<div id="bottomContent">
+    <button id="start">START!</button>
+    <div class="feedback">
+        <div class="topFeedback">
+            Guac eaten:
+        </div>
+        <span id="guacEaten">0</span>
+    </div>
+    <div class="feedback">
+        <div class="topFeedback">
+            Guac wasted:
+        </div>
+        <span id="guacWasted">0</span>
+    </div>
+</div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="whacaMole.js"></script>
+<script src="chips.js"></script>
+</body>
+</html>
